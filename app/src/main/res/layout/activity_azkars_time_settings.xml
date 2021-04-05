@@ -10,7 +10,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="@drawable/layoutbg"
-    tools:context="com.ramadan.azkar.AzkarsTimeSettingsActivity">
+    tools:context="com.ramadanazkar.azkarramadan.com.ramadanazkar.azkarramadan.AzkarsTimeSettingsActivity">
 
 
     <com.airbnb.lottie.LottieAnimationView
@@ -20,6 +20,7 @@
         appns:lottie_autoPlay="true"
         appns:lottie_fileName="stopwatch.json"
         appns:lottie_loop="true" />
+
     <LinearLayout
 
         android:layout_width="wrap_content"

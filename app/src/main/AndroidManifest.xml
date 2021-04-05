@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.ramadan.azkar">
+    package="com.ramadanazkar.azkarramadan">
 
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -12,7 +12,7 @@
 
 
     <application
-        android:name="com.ramadan.azkar.MyApplication"
+        android:name="com.ramadanazkar.azkarramadan.com.ramadanazkar.azkarramadan.MyApplication"
         android:allowBackup="true"
         android:icon="@drawable/ramadhan"
         android:label="@string/app_name"
@@ -30,7 +30,7 @@
 
 
         <activity
-            android:name="com.ramadan.azkar.SplashActivity"
+            android:name="com.ramadanazkar.azkarramadan.com.ramadanazkar.azkarramadan.SplashActivity"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
@@ -43,7 +43,7 @@
         </activity>
 
         <activity
-            android:name="com.ramadan.azkar.OccasionsActivity"
+            android:name="com.ramadanazkar.azkarramadan.com.ramadanazkar.azkarramadan.OccasionsActivity"
             android:label="@string/title_activity_occasions"
             android:screenOrientation="portrait"
             android:theme="@style/MenuNavigation3Theme">
@@ -63,16 +63,16 @@
         </activity>
 
         <activity
-            android:name="com.ramadan.azkar.CategoryActivity"
+            android:name="com.ramadanazkar.azkarramadan.com.ramadanazkar.azkarramadan.CategoryActivity"
             android:label="@string/title_activity_category"
             android:screenOrientation="portrait"
             android:theme="@style/MenuNavigation3Theme" />
         <activity
-            android:name="com.ramadan.azkar.AzkarActivity"
+            android:name="com.ramadanazkar.azkarramadan.com.ramadanazkar.azkarramadan.AzkarActivity"
             android:label="@string/title_activity_azkar"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.ramadan.azkar.AzkarsActivity"
+            android:name="com.ramadanazkar.azkarramadan.com.ramadanazkar.azkarramadan.AzkarsActivity"
             android:label="@string/title_activity_azkars"
             android:screenOrientation="portrait"
             android:theme="@style/MenuNavigation3Theme">
@@ -80,42 +80,40 @@
         </activity>
 
         <activity
-            android:name="com.ramadan.azkar.AboutActivity"
+            android:name="com.ramadanazkar.azkarramadan.com.ramadanazkar.azkarramadan.AboutActivity"
             android:label="@string/title_contactus"
             android:theme="@style/GreenActionBarTheme">
         </activity>
 
 
         <activity
-            android:name="com.ramadan.azkar.QuranPlayActivity"
+            android:name="com.ramadanazkar.azkarramadan.com.ramadanazkar.azkarramadan.QuranPlayActivity"
             android:label="@string/title_activity_quran"
-            android:parentActivityName="com.ramadan.azkar.Quranlist">
+            android:parentActivityName="com.ramadanazkar.azkarramadan.com.ramadanazkar.azkarramadan.Quranlist">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.ramadan.azkar.Quranlist"/>
+                android:value="com.ramadanazkar.azkarramadan.com.ramadanazkar.azkarramadan.Quranlist" />
         </activity>
 
 
-
-
-
-        <activity android:name="com.ramadan.azkar.Quranlist"
+        <activity
+            android:name="com.ramadanazkar.azkarramadan.com.ramadanazkar.azkarramadan.Quranlist"
             android:label="@string/title_activity_quran"
             android:screenOrientation="portrait"
             android:theme="@style/MenuNavigation3Theme" />
 
 
         <activity
-            android:name="com.ramadan.azkar.MainActivity"
+            android:name="com.ramadanazkar.azkarramadan.com.ramadanazkar.azkarramadan.MainActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@style/MenuNavigation3Theme"/>
 
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
-            android:value="com.ramadan.azkar.MainActivity"/>
+            android:value="com.ramadanazkar.azkarramadan.com.ramadanazkar.azkarramadan.MainActivity" />
         <activity
-            android:name="com.ramadan.azkar.UserSettingActivity"
+            android:name="com.ramadanazkar.azkarramadan.com.ramadanazkar.azkarramadan.UserSettingActivity"
             android:label="@string/title_activity_user_setting"
             android:screenOrientation="portrait" />
         <activity
@@ -124,12 +122,12 @@
             android:theme="@android:style/Theme.Translucent" />
 
 
-        <receiver android:name="com.ramadan.azkar.BootReceiver">
+        <receiver android:name="com.ramadanazkar.azkarramadan.com.ramadanazkar.azkarramadan.BootReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
-        <receiver android:name="com.ramadan.azkar.WidgetProvider">
+        <receiver android:name="com.ramadanazkar.azkarramadan.com.ramadanazkar.azkarramadan.WidgetProvider">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
@@ -139,7 +137,7 @@
                 android:resource="@xml/widget_info" />
         </receiver>
 
-        <service android:name="com.ramadan.azkar.NotifyService" />
+        <service android:name="com.ramadanazkar.azkarramadan.com.ramadanazkar.azkarramadan.NotifyService" />
 
 
         <receiver
@@ -167,13 +165,14 @@
             </intent-filter>
         </receiver>
 
-        <receiver android:name="com.ramadan.azkar.AlarmReceiver" />
+        <receiver android:name="com.ramadanazkar.azkarramadan.com.ramadanazkar.azkarramadan.AlarmReceiver" />
 
         <service android:name="com.google.android.gms.analytics.CampaignTrackingService" />
-        <service android:name="com.ramadan.azkar.SchedulingServiceToast" />
+        <service android:name="com.ramadanazkar.azkarramadan.com.ramadanazkar.azkarramadan.SchedulingServiceToast" />
 
-        <activity android:name="com.ramadan.azkar.AzkarsTimeSettingsActivity"
-            android:theme="@style/GreenActionBarTheme"/>
+        <activity
+            android:name="com.ramadanazkar.azkarramadan.com.ramadanazkar.azkarramadan.AzkarsTimeSettingsActivity"
+            android:theme="@style/GreenActionBarTheme" />
     </application>
 
 </manifest>

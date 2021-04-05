@@ -1,7 +1,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.ramadan.azkar.AzkarActivity">
+    tools:context="com.ramadanazkar.azkarramadan.com.ramadanazkar.azkarramadan.AzkarActivity">
 
     <item
         android:id="@+id/menu_overflow"
@@ -9,9 +9,9 @@
         app:showAsAction="always"
         android:title="">
 
-    <menu>
-    <item
-        android:id="@+id/action_share"
+        <menu>
+            <item
+                android:id="@+id/action_share"
         android:icon="@mipmap/social_share"
         app:showAsAction="ifRoom"
         android:title="@string/action_share"/>

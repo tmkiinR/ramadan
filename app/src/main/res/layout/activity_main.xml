@@ -6,7 +6,7 @@
     android:background="@drawable/bg1"
     android:orientation="vertical"
     android:layoutDirection="ltr"
-    tools:context="com.ramadan.azkar.MainActivity">
+    tools:context="com.ramadanazkar.azkarramadan.com.ramadanazkar.azkarramadan.MainActivity">
 
 
     <ImageView
